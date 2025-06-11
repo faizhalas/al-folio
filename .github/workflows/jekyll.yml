@@ -24,6 +24,12 @@ jobs:
           gem install bundler -v 2.6.9
           bundle _2.6.9_ install --jobs 4 --retry 3
 
+      - name: Install Jupyter
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y python3-pip
+          pip3 install jupyter
+
       - name: Build site
         run: bundle exec jekyll build
 
