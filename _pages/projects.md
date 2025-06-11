@@ -5,7 +5,7 @@ permalink: /projects/
 description: List of my projects.
 nav: true
 nav_order: 3
-display_categories: [work, open science]
+display_categories: [open science, work]
 horizontal: false
 ---
 

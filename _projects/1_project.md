@@ -2,7 +2,7 @@
 layout: page
 title: Coconut Libtool
 description: All-in-one data mining and textual analysis tool for everyone.
-img: assets/img/12.jpg
+img: assets/img/cocon_ss.png
 importance: 1
 redirect: https://www.coconut-libtool.com/
 category: open science

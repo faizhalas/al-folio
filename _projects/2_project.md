@@ -2,7 +2,7 @@
 layout: page
 title: Unnamed Project
 description: Ongoing project collaborated with 4 students from different universities and a librarian.
-img: assets/img/3.jpg
+img: assets/img/book.jpg
 importance: 2
 category: open science
 giscus_comments: true
