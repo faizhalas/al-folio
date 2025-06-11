@@ -2,7 +2,7 @@ name: Build and Deploy Jekyll site to GitHub Pages
 
 on:
   push:
-    branches: ["main"]  # atau ganti ke 'master' jika kamu pakai itu
+    branches: ["main"]  
 
 permissions:
   contents: write
