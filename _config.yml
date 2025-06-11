@@ -2,7 +2,7 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: blank # the website title (if blank, full name will be used instead)
+title: Faizhal A. S. # the website title (if blank, full name will be used instead)
 first_name: Faizhal
 middle_name: Arif
 last_name: Santosa
@@ -189,6 +189,9 @@ exclude:
   - README.md
   - readme_preview/
   - vendor
+  - _pages/repositories.md
+  - _pages/teaching.md
+  - _pages/blog.md
 keep_files:
   - CNAME
   - .nojekyll
@@ -337,8 +340,7 @@ external_links:
   rel: external nofollow noopener
   target: _blank
   exclude:
-    - _pages/repositories.md
-    - _pages/teaching.md
+    
 
 
 # -----------------------------------------------------------------------------
