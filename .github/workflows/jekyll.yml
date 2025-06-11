@@ -24,6 +24,9 @@ jobs:
           gem install bundler -v 2.6.9
           bundle _2.6.9_ install --jobs 4 --retry 3
 
+      - name: Run Prettier and write changes
+        run: npx prettier . --write
+
       - name: Install Jupyter
         run: |
           sudo apt-get update
