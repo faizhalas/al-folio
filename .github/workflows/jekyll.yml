@@ -28,7 +28,7 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y python3-pip
-          pip3 install jupyter
+          pip3 install jupyter nbconvert
 
       - name: Build site
         run: bundle exec jekyll build
