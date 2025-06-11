@@ -3,6 +3,7 @@ name: Build and Deploy Jekyll site to GitHub Pages
 on:
   push:
     branches: [main]
+
 permissions:
   contents: write
 
@@ -13,19 +14,37 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
+        with:
+          persist-credentials: true
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.1' # harus cocok dengan Gemfile
+          ruby-version: '3.1'
 
       - name: Install Dependencies
         run: |
           gem install bundler -v 2.6.9
           bundle _2.6.9_ install --jobs 4 --retry 3
 
+      - name: Set up Node.js (for Prettier)
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install Prettier
+        run: npm install --save-dev prettier
+
       - name: Run Prettier and write changes
         run: npx prettier . --write
+
+      - name: Commit and push Prettier fixes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add .
+          git diff --cached --quiet || git commit -m "chore: auto-format code with Prettier"
+          git push
 
       - name: Install Jupyter
         run: |
