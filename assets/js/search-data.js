@@ -405,16 +405,14 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
+            },},{id: "news-i-have-an-opportunity-to-share-our-work-for-undergraduate-students-at-the-university-of-oklahoma",
+          title: 'I have an opportunity to share our work for undergraduate students at the...',
           description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
+          section: "News",},{id: "news-i-ll-be-giving-a-speech-about-systematic-literature-review-at-universitas-yarsi",
+          title: 'I’ll be giving a speech about systematic literature review at Universitas YARSI.',
           description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_2/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+          section: "News",},{id: "news-we-re-working-to-release-a-new-version-of-coconut-libtool",
+          title: 'We’re working to release a new version of Coconut Libtool 🌴',
           description: "",
           section: "News",},{id: "projects-coconut-libtool",
           title: 'Coconut Libtool',
