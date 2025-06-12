@@ -5,7 +5,7 @@ description: Ongoing project collaborated with 4 students from different univers
 img: assets/img/book.jpg
 importance: 2
 category: open science
-giscus_comments: true
+giscus_comments: false
 ---
 
 Nothing to see here, but we expect to publish our work by the end of 2025.
