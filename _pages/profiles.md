@@ -24,7 +24,7 @@ horizontal: false
       {% for person in filtered %}
         <div class="col">
           <div class="card h-100">
-            <img src="{{ person.image }}" class="card-img-top" alt="{{ person.title }}" style="object-fit: cover; height: 300px;">
+            <img src="{{ person.image }}" class="card-img-top" alt="{{ person.title }}" style="object-fit: cover; height: 200px;">
             <div class="card-body text-center">
               <h5 class="card-title">{{ person.title }}</h5>
               <p class="card-text text-muted">{{ person.affiliation }}</p>
