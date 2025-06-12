@@ -14,12 +14,12 @@
     - title: MSc
       institution: University of Sheffield Information School, England
       year: 2025 - 2026
-      area:
+      description:
         - Data Science
     - title: Bachelor degree (S.I.Pust.)
       institution: Universitas Terbuka, Indonesia
       year: 2015 - 2018
-      area:
+      description:
         - Library and Information Science
 
 - title: Experience
@@ -54,7 +54,7 @@
       items:
         - Best Librarian of Banjarnegara
 
-- title: Academic Interests
+- title: Interests
   type: nested_list
   contents:
     - title: Data
@@ -69,9 +69,24 @@
       institution: The University of Oklahoma, School of Library and Information Studies
       year: 2025
       description: Guest speaker at the academic session for undergraduate students.
+    - title: Speaker
+      institution: Polytechnic Institute of Nuclear Technology
+      year: 2025
+      description:
+        - Speaker for an event held by the Student Research Activity Unit called Hare Rise. Deep discussion about research and scholarly communication in 8 days.
+    - title: Speaker
+      institution: Universitas YARSI
+      year: 2025
+      description:
+        - Speaker for a webinar about how to conduct a systematic literature review using Catchii for students, librarians, and lecturers.
     - title: Co-supervisor
       institution: University of Illinois at Urbana-Champaign, School of Information Sciences
       year: 2024
       description:
         - Co-supervisor for a project during the Spring 2024 semester for the courses IS 579 Guided Research Experience and IS 189 Independent Study.
+    - title: Spekaer (Lightning talk)
+      institution: Nebraska Library Commission
+      year: 2023
+      description:
+        - Joined to give a lightning talk about how to use technology to cope with the workload at the 2023 Big Talk From Small Libraries.
     
