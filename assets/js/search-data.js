@@ -466,7 +466,7 @@ ninja.data = [{
         title: 'Scopus',
         section: 'Socials',
         handler: () => {
-          window.open("https://www.scopus.com/authid/detail.uri?authorId=58176368900# your profile on Scopus", "_blank");
+          window.open("https://www.scopus.com/authid/detail.uri?authorId=58176368900", "_blank");
         },
       },{
       id: 'light-theme',
