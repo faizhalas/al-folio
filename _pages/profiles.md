@@ -20,13 +20,11 @@ horizontal: false
 
     {% assign filtered = projects | where: "category", category %}
 
-    <p><strong>{{ filtered | size }}</strong> people found in {{ category }}</p>
-
     <div class="row row-cols-1 row-cols-md-5 g-4">
       {% for person in filtered %}
         <div class="col">
           <div class="card h-100">
-            <img src="{{ person.image }}" class="card-img-top" alt="{{ person.title }}" style="object-fit: cover; height: 100px;">
+            <img src="{{ person.image }}" class="card-img-top" alt="{{ person.title }}" style="object-fit: cover; height: 300px;">
             <div class="card-body text-center">
               <h5 class="card-title">{{ person.title }}</h5>
               <p class="card-text text-muted">{{ person.affiliation }}</p>
