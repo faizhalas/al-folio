@@ -5,7 +5,7 @@ title: people
 description: people who have partnered with me in previous projects as well as those currently collaborating
 nav: true
 nav_order: 7
-display_categories: [Project Collaborators, Academic Co-authors]
+display_categories: ["Project Collaborators", "Academic Co-authors"]
 horizontal: false
 ---
 
@@ -107,27 +107,32 @@ horizontal: false
       "affiliation": "Dispusip Kab. Sidrap",
       "image": "/assets/images/people/empty.jpg"
     }
-  ] 
+  ]
 %}
 
 <div class="projects">
-{% for category in page.display_categories %}
-  <a id="{{ category }}" href=".#{{ category }}">
-    <h2 class="category text-capitalize">{{ category }}</h2>
-  </a>
-  {% assign filtered = projects | where: "category", category %}
-  <div class="row row-cols-1 row-cols-md-5 g-4">
-    {% for person in filtered %}
-    <div class="col">
-      <div class="card h-100">
-        <img src="{{ person.image }}" class="card-img-top" alt="{{ person.title }}" style="object-fit: cover; height: 100px;">
-        <div class="card-body text-center">
-          <h5 class="card-title">{{ person.title }}</h5>
-          <p class="card-text text-muted">{{ person.affiliation }}</p>
+  {% for category in page.display_categories %}
+    {% assign category_id = category | downcase | replace: " ", "-" %}
+    <a id="{{ category_id }}" href=".#{{ category_id }}">
+      <h2 class="category text-capitalize">{{ category }}</h2>
+    </a>
+
+    {% assign filtered = projects | where: "category", category %}
+
+    <p><strong>{{ filtered | size }}</strong> people found in {{ category }}</p>
+
+    <div class="row row-cols-1 row-cols-md-5 g-4">
+      {% for person in filtered %}
+        <div class="col">
+          <div class="card h-100">
+            <img src="{{ person.image }}" class="card-img-top" alt="{{ person.title }}" style="object-fit: cover; height: 100px;">
+            <div class="card-body text-center">
+              <h5 class="card-title">{{ person.title }}</h5>
+              <p class="card-text text-muted">{{ person.affiliation }}</p>
+            </div>
+          </div>
         </div>
-      </div>
+      {% endfor %}
     </div>
-    {% endfor %}
-  </div>
-{% endfor %}
+  {% endfor %}
 </div>
